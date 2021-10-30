@@ -1,0 +1,87 @@
+.post {
+    text-align: left;
+
+    @include sm {
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+
+    &__date {
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 0 1rem;
+    }
+
+    &__date::before {
+        content: '';
+        display: inline-block;
+        height: 6px;
+        width: 12px;
+        border-radius: 2px;
+        background-color: $red;
+        margin-right: 1rem;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        line-height: 1.5;
+        border-bottom: $border;
+        padding-bottom: 2rem;
+        cursor: pointer;
+        transition: all .4s;
+
+        @include md {
+            font-size: 1.7rem;
+            line-height: 1.2;
+        }
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        @include md {
+            flex-direction: column;
+        }
+        @include sm {
+            flex-direction: row;
+        }
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        margin-right: 3rem;
+        margin-top: 2.2rem;
+
+        @include md {
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+
+        @include sm {
+            margin-right: 3rem;
+            margin-top: 2.2rem;
+        }
+
+
+        &:hover svg {
+            fill: $red;
+        }
+    }
+
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 1rem;
+        transition: all .4s;
+    }
+}

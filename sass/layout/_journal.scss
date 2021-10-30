@@ -1,0 +1,14 @@
+.journal {
+    text-align: center;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        margin-bottom: 4rem;
+
+        @include sm {
+            grid-template-columns: 1fr; 
+        }
+    }
+}

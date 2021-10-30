@@ -1,0 +1,147 @@
+.footer {
+    width: 100%;
+    background-color: $background;
+    margin-top: 4.5rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+        padding: 7rem 0;
+        border-bottom: $border;
+
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 4rem 0;
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+            
+        }
+
+    }
+
+    &__heading {
+        font-size: 1.7rem;
+        margin-bottom: 2.5rem;
+    }
+
+    & .para {
+        margin-bottom: 1rem;
+    }
+}
+
+.stores {
+    display: flex;
+    //justify-content: space-between;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: $border;
+
+
+    .play-store {
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        border-radius: 5px;
+        text-decoration: none;
+        color: $black;
+        padding: .8rem;
+        transition: all .5s;
+        margin-right: 1rem;
+
+        .android {
+            width: 2rem;
+            height: 2rem;
+            fill: $red;
+            margin-right: 1rem;
+            transition: all .5s;
+        }
+
+        &__text {
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            span {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $red;
+        }
+
+        &:hover svg {
+            fill: $white;     
+        }
+    }
+
+    .app-store {
+        display: flex;
+        background-color: $red;
+        border-radius: 5px;
+        text-decoration: none;
+        color: $white;
+        padding: .8rem;
+        padding-right: 1.8rem;
+        align-items: center;
+
+        .apple {
+            width: 2rem;
+            height: 2rem;
+            fill: $white;
+            margin-right: 1rem;
+        }
+        &__text {
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            span {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.socials {
+
+    &__icons {
+        display: flex;
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        fill: $black;
+        background-color: $white;
+        padding: .8rem;
+        margin-top: -1rem;
+        margin-right: 1.2rem;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            fill: $white;
+            background-color: $red;
+        }
+    }
+}
+
+.rights {
+    text-align: center;
+    padding: 2rem 0;
+
+    &__text {
+        font-size: 1.5rem;
+        color: $black;
+
+        & span {
+            color: $red;
+            cursor: pointer;
+        }
+    }
+}

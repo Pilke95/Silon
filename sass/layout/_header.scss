@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    background-image: linear-gradient(to right, hsl(356, 87%, 85%), hsl(0, 20%, 69%));
+    height: 36vw;
+
+    @include md {
+        flex-direction: column-reverse;
+        height: 80vh;
+    }
+
+
+    &__text {
+        flex-basis: 51%;    
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20%;
+        align-items: center;
+
+        @include lg {
+            padding-left: 10%;
+        }
+
+        @include md {
+            padding-left: 0;
+            flex-basis: 100%;
+        }
+
+        h4 {
+            color: hsl(0, 9%, 54%);
+            font-size: 1.4rem;
+            letter-spacing: 4px;
+        }
+
+        h1 {
+            font-size: 5.5rem;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-top: 1.25rem;
+            margin-bottom: 1.5rem;
+
+            @include xl {
+                font-size: 4.5rem;
+                line-height: 1.1;
+            }
+
+            @include lg {
+                font-size: 3.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}
+

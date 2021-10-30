@@ -1,0 +1,140 @@
+// FEATURED //   
+.featured {
+    text-align: center;
+
+    &__products {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3.5rem;
+        margin-bottom: 5rem;
+
+        @include md {
+           grid-template-columns: 1fr;
+        }
+    }
+}
+
+.discount {
+   display: flex;
+   background-color: $background;
+   height: 31vw;
+
+   @include md {
+    flex-direction: column;
+    height: 80vh;
+}
+
+   &__text {
+    flex-basis: 51%;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    align-items: center;
+
+    @include lg {
+        padding-left: 10%;
+    }
+
+    @include md {
+        padding-left: 0;
+    }
+
+   }
+
+   &__heading {
+       font-size: 6.5rem;
+       font-weight: 400;
+       font-style: italic;
+   }
+
+   &__sub {
+       font-size: 2.3rem;
+       font-weight: 300;
+       margin: 2.5rem auto;
+
+       @include lg {
+           margin: 1.5rem auto;
+       }
+   }
+
+}
+
+.popular {
+    width: 100%;
+    background-color: $white;
+    text-align: center;
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+        margin-bottom: 10rem;
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include sm {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &__shiping {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+        margin: 5rem auto;
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @include sm {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &__box {
+        border: $border;
+        padding: 2rem;
+
+        & img {
+            margin-bottom: 2.5rem;
+        }
+
+        & h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.trending {
+    width: 100%;
+    background-color: $white;
+    text-align: center;
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: .5rem 3rem;
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+        
+    }
+}
+
+.follow-us {
+    width: 100%;
+    background-color: $white;
+    text-align: center;
+}

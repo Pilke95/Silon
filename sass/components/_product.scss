@@ -1,0 +1,65 @@
+.product {
+    
+
+    &__photo {
+        position: relative;
+        margin-bottom: 2rem;
+    
+        & img {
+            width: 100%;
+        }
+    
+
+        &:hover div {
+            opacity: 1;
+            bottom: 14%;
+        }
+
+        
+    }
+
+    &__links {
+        position: absolute;
+        width: 100%;
+        bottom: 8%;
+        opacity: 0;
+        transition: all .4s;
+        
+    }
+
+    &__icon {
+        height: 5rem;
+        width: 5rem;
+        padding: 1.7rem;
+        fill: $black;
+        background-color: $white;
+        border-radius: 50%;
+        margin-right: .4rem;
+        cursor: pointer;
+        transition: all .5s;
+        bottom: 0;
+
+
+        &:hover {
+            background-color: $red;
+            fill: $white;
+        }
+    }
+
+    &__rating {
+       margin: .6rem 0;
+    }
+
+    &__star {
+        height: 1.4rem;
+        width: 1.4rem;
+        fill: $red;
+        cursor: pointer;
+    }
+
+    &__price {
+        color: $black;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+}
