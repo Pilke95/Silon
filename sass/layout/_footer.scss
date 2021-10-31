@@ -62,11 +62,11 @@
         &__text {
             font-size: 1rem;
             text-transform: uppercase;
+        }
 
-            span {
+        &__span {
                 font-size: 1.2rem;
                 font-weight: bold;
-            }
         }
 
         &:hover {
@@ -74,7 +74,7 @@
             background-color: $red;
         }
 
-        &:hover svg {
+        &:hover .android {
             fill: $white;     
         }
     }
@@ -98,11 +98,11 @@
         &__text {
             font-size: 1rem;
             text-transform: uppercase;
+        }
 
-            span {
-                font-size: 1.2rem;
+        &__span {
+                 font-size: 1.2rem;
                 font-weight: bold;
-            }
         }
     }
 }
@@ -138,10 +138,10 @@
     &__text {
         font-size: 1.5rem;
         color: $black;
+    }
 
-        & span {
-            color: $red;
-            cursor: pointer;
-        }
+    &__dev {
+        color: $red;
+        cursor: pointer;
     }
 }
